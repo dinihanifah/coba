@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance HTML & CSS</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lightblue;
+    }
+
+    .wrraper {
+        width: 800px;
+        background-color: aliceblue;
+        padding: 30px;
+        margin: 60px auto;
+        border-radius: 10px;
+    }
+
+    .input-wrraper {
+        width: calc(100% - 16px);
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .submit {
+        width: 100%;
+        background-color: #4072b8;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 8px 0;
+    }
+
+    .submit:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .data-table {
+        width: 100%;
+    }
+
+    th {
+        text-align: center;
+        color: white;
+        background-color:  #4072b8;
+        padding: 6px;
+    }
+
+    td {
+        padding: 6px;
+        border-bottom: 1px solid;
+    }
+
+    tr:hover {
+        background-color: lightblue;
+        transition: 0,3s;
+    }
+
+</style>
+
+<body>
+    <div class="wrraper">
+        <h1>Advance HTML & CSS</h1>
+        <form>
+            <label>Name</label>
+            <input class="input-wrraper" placeholder="enter your full name" type="text" required>
+
+            <label>Age</label>
+            <input class="input-wrraper" type="number" min="17">
+
+            <label>Email</label>
+            <input class="input-wrraper" type="email" required>
+
+            <label>DoB</label>
+            <input class="input-wrraper" type="date">
+
+            <label>Message</label>
+            <textarea class="input-wrraper" rows="4"></textarea>
+
+            <button class="submit" type="submit">Submit</button>
+        </form>  
+    </div>
+
+    <div class="wrraper">
+        <h2>Data Mahasiswa</h2>
+        <p>Berikut data alumni mahasiswa angkatan 21</p>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Din</td>
+                    <td>22</td>
+                    <td>dinihanifah766@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Din</td>
+                    <td>22</td>
+                    <td>dinihanifah766@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Din</td>
+                    <td>22</td>
+                    <td>dinihanifah766@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Din</td>
+                    <td>22</td>
+                    <td>dinihanifah766@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
